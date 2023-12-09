@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inserindo áudio e vídeo</title>
+    </head>
+    <body>
+    <main>
+        <h1>Trabalhando com tabelas</h1>
+        <p>No HTML os dados tabulares são aquelas que podem ser representados visualmente em formas de tabelas.</p>
+        <br>
+        <p>A Elaboração de uma tabela consiste em uma combinação de linhas e columas, resultado em uma forma objetiva e ordenada de expor as informações.</p>
+        <br>
+        <h2>Tabela Simples:</h2>
+
+        <!-- O atributo "border" no HTML5 ão está mais sendo utilizado, pois essa configuração é realizada dentro no CDD -->
+        <table border="1">
+        <!-- tr = é definido como linha -->
+    <tr>
+        <!-- td= é definido como célula -->
+        <td>Violão</td>
+        <td>Guitarra</td>
+    </tr>
+    <tr>
+        <td>Violino</td>
+        <td>Piano</td>
+    </tr>
+        </table>
+        <br>
+        <h2>Tabela com células de título:</h2>
+        <table border="1">
+            <tr>
+                <th>Instrumento de corda</th>
+                <th>Instrumento de sopro</th>
+            </tr>
+            <tr>
+                <td>Violino</td>
+                <td>Flauta</td>
+            </tr>
+            <tr>
+                <td>Piano</td>
+                <td>Corneta</td>
+            </tr>
+
+        </table>
+        <br>
+        <h2>Cabeçalhos na vertical:</h2>
+        <table border="1">
+            <tr>
+                <th>Livros:</th>
+                <td>Arte moderna</td>
+                <td>Programação</td>
+            </tr>
+            <tr>
+                <th>Quantidade:</th>
+                <td>500 exemplares</td>
+                <td>600 exemplares</td>
+            </tr>
+        </table>  
+        <br>
+        <h2>Cabeçalho, corpo e rodapé da tabela:</h2>
+        <br>
+        <p>Estes elementos criam seções dentro da tabela que podem receber uma formação diferenciada, útil para a formação de tabelas com muitos dados.</p>
+
+        <table border="1">
+            <caption>Tabela thead/ tfoot/ tbody</caption>
+                <thead>
+                    <tr>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Resultado 1</td>
+                        <td>Resultado 2</td>
+                        <td>Resultado 3</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Conteúdo a</td>
+                        <td>Conteúdo b</td>
+                        <td>Conteúdo c</td>
+                    </tr>
+                    <tr>
+                        <td>Conteúdo d</td>
+                        <td>Conteúdo e</td>
+                        <td>Conteúdo f</td>
+                    </tr>
+                    <tr>
+                        <td>Conteúdo g</td>
+                        <td>Conteúdo h</td>
+                        <td>Conteúdo i</td>
+                    </tr>
+                    <tr>
+                        <td>Conteúdo j</td>
+                        <td>Conteúdo k</td>
+                        <td>Conteúdo l</td>
+                    </tr>
+                </tbody>
+        </table>
+        <hr>
+        <p>Mesclando celúla</p>
+        <table border="1">
+            <caption>Tabela thead/ tfoot/ tbody</caption>
+                <thead>
+                    <tr>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Resultado 1</td>
+                        <td>Resultado 2</td>
+                        <td>Resultado 3</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Conteúdo a</td>
+                        <td>Conteúdo b</td>
+                        <td>Conteúdo c</td>
+                    </tr>
+                    <tr>
+                        <td>Conteúdo d</td>
+                        <td>Conteúdo e</td>
+                        <!-- <td>Conteúdo f</td>-->
+                    </tr>      
+                </tbody>
+            </table>
+            <hr>
+        <p>Mesclar coluna</p>
+        <table border="1">
+            <caption>Tabela thead/ tfoot/ tbody</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Resultado 1</td>
+                        <td>Resultado 2</td>
+                        <td>Resultado 3</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Conteúdo a</td>
+                        <td>Conteúdo b</td>
+                        <td>Conteúdo c</td>
+                    </tr>
+                    <tr>
+                        <td>Conteúdo d</td>
+                        <td>Conteúdo e</td>
+                        <td>Conteúdo f</td>
+                    </tr>      
+                </tbody>
+            </table>
+    </main>
+    </body>
+    </html>

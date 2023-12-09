@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elementos de formulários</title>
+    </head>
+    <body>
+    <main>
+        <h1>TRabalhando com tags para formulários</h1>
+        <hr>
+        <p>Elementos para formulários são voltados á interação com o usuário. Entrada de dados, seleção de opções, processamento para manipulção de dados e etc.</p>
+        <br>
+        <p>Formuláriod para HTML são somente uma <b>INTERFACE</b>.</p>
+        <br>
+        <p>Para que o formulário funcione, é necessário combiná-la com a <b>linguagem de programação</b>.</p>
+        <hr>
+        <h2>Exemplos:</h2>
+        <!--container para elementos de formulário-->
+        <form action="#" method="post">
+            <p>
+                <!--label= rótulo para visualização do usuário-->
+                <label for="nome">Nome:</label>
+                <!--required= campo ficará obrigatorio-->
+                <input required type="text" id="nome" name="nome">
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input required type="email" id="email" name="email">
+            </p>
+
+            <p>
+                <!--telefone ou pone-->
+                <label for="telefone">Telefone:</label>
+                <input required type="tel" id="telefone" name="telefone">
+            </p>
+
+            <p>
+                <!--dataNasc = data de nascimento-->
+                <label for="dataNasc">Data de nascimento:</label>
+                <input required type="date" id="dataNasc" name="dataNasc">
+            </p>
+
+            <!--Para input com apenas uma escolha (radio)-->
+            <p>Sexo:</p>
+            <p>
+                <input type="radio" id="feminino"name="sexo">
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" id="masculino"name="sexo">
+                <label for="masculino">Masculino</label>
+            </p>
+
+           <!--Para input para varias escolhas (checkbok)-->
+           <p>Interesses:</p>
+           <p>
+                <input type="checkbox" id="html5" name="interesses">
+                <label for="html5">HTML5</label>
+
+                <input type="checkbox" id="css3" name="interesses">
+                <label for="css3">CSS3</label>
+
+                <input type="checkbox" id="javascript" name="interesses">
+                <label for="javascript">JavaScript</label>
+           </p>
+
+           <p>
+                <label for="cor">Qual a sua cor preferida?</label>
+                <input type="color" id="cor" name="cor">
+           </p>
+
+           <p>
+                <label for="idade">Qual a sua idade?</label>
+                <input type="number" id="idade" name="idade">
+           </p>
+
+           <p>
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value="">Elogios</option>
+                <option value="">Relamações</option>
+                <option value="">Sugestões</option>
+            </select>
+
+            <p>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+            </p>
+
+            <button>Enviar</button>
+        </form>
+    </main>  
+    </body>
+</html>
