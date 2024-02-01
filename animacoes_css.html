@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações CSS</title>
+
+    <style>
+        #cores{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: cores;
+            animation-duration: 4s;
+        }
+
+        @keyframes cores{
+            from{
+                background-color: blue;
+            }
+            to{
+                background-color:rgb(255, 42, 0);
+            }
+
+        }
+
+        #coresMove{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            animation-name: movimento;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes movimento{
+            0%{background-color: green;
+            left: 0;
+            top: 0;
+        }
+
+            25%{background-color: blue;
+                left: 200px;
+                top: 0;
+            }
+        
+            50%{background-color: orange;
+                left: 200px;
+                top: 200px;
+            }
+
+            75%{background-color: red;
+                left: 0px;
+                top: 200px;
+            }
+
+            100%{background-color: yellow;
+                left: 0;
+                top: 0;
+            }
+        }
+        
+        #rota{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            color: white;
+            padding: 30px;
+            animation-name: rota;
+            animation-duration: 5s;
+        }
+
+        @keyframes rota{
+            0%{
+                transform: rotate(0deg);
+                left: 0px;
+            }
+
+            25%{
+                transform: rotate(20deg);
+                left: 0px;
+            }
+
+            50%{transform: rotate(0deg);
+                left: 500px;}
+
+            100%{transform: rotate(-360deg);
+                left: 0px;}
+        }
+            </style>
+
+</head>
+<body>
+    <h1><b>O que são animações CSS?<b></h1>
+    <p>Você pode alterar quantas propriedades CSS quiser, quantas vezes quiser.</p>
+    <p>Para usar animações, você deve primeiro especificar alguns quadros-chave para a animação.</p>
+    <p>Os quadros-chave contêm quais estilos o elemento terá em determinados momentos.</p>
+
+    <h2><b>A regra @keyframes</b></h2>
+    
+    <p>Quando você especifica estilos CSS  dentro da @keyfranmes regra, a animação mudará gradualmente de estilo atual para o novo estilo determinados momentos.</p>
+    <p>Para que uma animaçção funcione, você deve vincula a um elemento</p>
+
+    <h2>Execute a animção na direçãoreversa ou em ciclos alternativos</h2>
+    <p> A animation-derectionpropriedade especifica se a animação deve ser reproduzida para frente, para trás ou em ciclos alterados</p>
+    <p> A propriedade Animation-Derection pode ter os seguintes valores:</p>
+    <ul>
+        <li>Normal- A animação é reproduzida normalmente (avança). Este é o padrão</li>
+        <li>Reversere- A animação é reproduzida na direção reversa (para trás)</li>
+        <li>alternate- A animação é reproduzida primeiro para frente e depois para trás</li>
+        <li>alternate-reverse- A animação é reproduzida primeiro para frente e depois para trás</li>
+    </ul>
+
+    <h3>Exemplos:</h3>
+    <div id="cores"></div>
+    <hr>
+    <div id="coresMove"></div>
+    <hr>
+    <div id="rota">web</div>
+
+    
+</body>
+</html>
