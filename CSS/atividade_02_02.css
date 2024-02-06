@@ -1,0 +1,43 @@
+#pai{
+    position: relative;
+    background-color: white;
+    margin:  16px auto;
+    height: 750px;
+    width: 900px;
+}
+
+body{background-color: black;}
+
+#um{
+    position: absolute;
+   background-color: rgb(43, 226, 134);
+    width: 393px;
+    height: 323px;  
+    top: 232px;
+    left: 302px;  
+}
+
+#dois{
+        position: absolute;
+        background-color: rgb(226, 43, 195);
+        width: 200px;
+        height: 170px;  
+        top: 306px;
+        left: 394px;  
+}
+
+#tres{
+    position: absolute;
+    background-color: rgb(43, 55, 226);
+    width: 150px;
+    height: 120px;  
+    top: 102px;
+    left: 102px;  
+}
+
+/* class: .
+    id: #
+    tag: só a palavra
+
+    
+    */
