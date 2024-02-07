@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+</head>
+<body>
+    <!--INICIO DO JS-->
+
+    <script>
+        //Condicional simples
+        //SE - SENAO (CONDICIONAIS)
+        //OPERADORES LÓGICOS
+        /*
+        VERIFICAÇÃO DE UMA MÉDIA ESCOLAR
+        MEDIA = (N1 + N2 + N3 + N4) / 4
+
+        PARA QUE O AULNO SEJA APROVADO A MEDIA TEM QUE SER MAIOR OU IGUAL A 6 PARA A APROVAÇÃO DO ALUNO, SE NÃO O ALUNO ESTÁ REPORVADO.
+
+        SE A MÉDIA >= 6 ENTAO
+            ESCREVAL (APROVADO)
+        SENAO
+            ESCREVAL (REPROVADO)
+        */
+
+        var media = (5 + 6 + 7 + 8) / 4
+
+        if(media >= 6){  //SE MEDIA >= 6 ENTAO
+            alert("Aprovado")
+        }
+        else{ //SE NAO
+            alert("Reprovado")
+        }
+
+            
+            /*SE MEDIA >= 6 ENTAO
+                APROVADO
+            SENAO SE MEDIA == 5 ENTAO
+                RECUPERAÇÃO
+            SE NAO
+                REPROVADO
+            */
+        
+        if(media >= 6){ //SE MEDIA >= 6 ENTAO
+            alert ("Aprovado")
+        }
+        else if(media == 5){ //SENAO SE MEDIA == 5 ENTAO
+            alert ("Recuperção")
+        }
+        else {//SE NAO
+            alert("Reprovado")
+        }
+            /*
+                OPREADORES DE COMPARAÇÃO
+                == iGUALDADE
+                >= MAIOR OU IGUAL
+                <=MENOS OU IGUAL
+                > MAIOR
+                < MENOR
+                != DIFERENÇA
+                <> DIFERENÇA
+                === IGUALDADE ESTRITA
+
+            */
+
+        var num1 = parseInt(prompt("Digite um número:")) 
+        var num2 = parseInt(prompt("Digite um número:")) 
+        
+        alert (num1 + num2)
+
+
+
+
+
+    </script>
+    <!--FIM DO JS-->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - Folha de pagamento inicial</title>
+</head>
+<body>
+    <script>
+        /*
+            VT - 6% - 0.06
+            VR - SE SALÁRIO FOR ATÉ 2500 = R$180    
+            VR - SE SALÁRIO FOR ACIMA 2500 = R$ 250    
+
+            SOLICITAR NOME, SALÁRIO, DEPARTAMENTO
+        */
+
+        var nome = prompt("Qual o seu nome completo:")
+        var salario = parseFloat(prompt("Qual o seu salário:"))
+        var dpto = prompt("Qual o seu departamento:") 
+        
+        var descVT = salario * 0.06
+
+        //VR - SE SALÁRIO FOR ATÉ 2500 = R$180    
+        //VR - SE SALÁRIO FOR ACIMA 2500 = R$ 250
+        var descVR = 0
+        if(salario <= 2500){
+           desVR = 180
+        }
+        else{
+            descVR = 250
+        }
+
+        alert (salario + descVT + descVR)
+
+
+
+
+        
+        </script>
+    
+</body>
+</html>
