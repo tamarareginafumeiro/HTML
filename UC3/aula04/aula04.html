@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h1>Aula 04</h1>
+
+    <h4>Cadastro de notas</h4>
+    <label for="nome">Nome completo:</label>
+    <input type="text" name="nome" id= "nome">
+
+    <label for="serie">Série:</label>
+    <input type="text" name="serie" id= "serie">
+
+    <label for="materia">Matéria::</label>
+    <Select name="materia" id="materia">
+        <option value="Português">Português</option>
+        <option value="Matemática">Matemática</option>
+    </Select>
+
+    <label for="bim1">Bimestre 1:</label>
+    <input type="bim1" name="bim1" id= "bim1">
+
+    <label for="bim2">Bimestre 2:</label>
+    <input type="bim2" name="bim2" id= "bim2">
+
+    <label for="bim3">Bimestre 3:</label>
+    <input type="bim3" name="bim3" id= "bim3">
+
+    <label for="bim4">Bimestre 4:</label>
+    <input type="bim4" name="bim4" id= "bim4">
+
+    <label for="media">Média:</label>
+    <input type="media" name="media" id= "media" readonly>
+
+    <button id="calcular">Calcular</button>
+
+    <p id="mostrar-nome"></p>
+    <p id="mostrar-serie"></p>
+    <p id="mostrar-materia"></p>
+    <p id="mostrar-bim1"></p>
+    <p id="mostrar-bim2"></p>
+    <p id="mostrar-bim3"></p>
+    <p id="mostrar-bim4"></p>
+    <p id="mostrar-media"></p>
+    <p id="mostrar-situacao"></p>
+
+
+
+    <script>
+        var nome = document.getElementById("nome")
+        var serie = document.getElementById("serie")    
+        var materia = document.getElementById("materia")
+        var bim1 = document.getElementById("bim1")
+        var bim2 = document.getElementById("bim2")
+        var bim3 = document.getElementById("bim3")
+        var bim4 = document.getElementById("bim4")
+        var media = document.getElementById("media")
+        var calcular = document.getElementById("calcular")
+
+        calcular.addEventListener("click",function(){
+          media.value = (parseInt (bim1.value) + parseInt (bim2.value) + parseInt (bim3.value) + parseInt (bim4.value)) / 4 
+          
+          document.getElementById("mostrar-nome").innerText = "Nome completo:" + nome.value
+          document.getElementById("mostrar-serie").innerText = "Série:" + serie.value
+          document.getElementById("mostrar-materia").innerText = "Matéria:" + materia.value
+          document.getElementById("mostrar-bim1").innerText = "B1:" + bim1.value
+          document.getElementById("mostrar-bim2").innerText = "B2:" + bim2.value
+          document.getElementById("mostrar-bim3").innerText = "B3:" + bim3.value
+          document.getElementById("mostrar-bim4").innerText = "B4:" + bim4.value
+          document.getElementById("mostrar-media").innerText = "Média:" + media.value
+        
+            // var situacao = ""
+
+          if(media.value >=6) {document.getElementById("mostrar-situacao").innerText = "Aprovado"} //situacao = "Aprovado"
+
+          else{document.getElementById("mostrar-situacao").innerText = "Reprovado"} // situação = "Reprovado"
+
+          //document.getElementById("mostrar-situacao").innerText = situacao
+        })
+
+
+    </script>
+
+
+</body>
+</html> 
+
+<!-- console.log (bim1.valeu + bim2.valeu + bim3.valeu + bim4.valeu) / 4 -->
