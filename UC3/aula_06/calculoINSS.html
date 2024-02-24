@@ -20,15 +20,15 @@
     <label for="salario">Salário bruto:</label>
     <input type="text" name="salario" id="salario">
 
-    <button id="'btn-gerar-folha">Gerar folha de pagamento</button>
+    <button id="btn-gerar-folha">Gerar folha de pagamento</button>
 
    <div id="relatorio"></div>
 
     <script>
-        var botaoGerar = document.getElementById("btn - gerar - folha");
+        var botaoGerar = document.getElementById("btn-gerar-folha");
         var relatorio = document.getElementById("relatorio")
 
-        botaoGerar.addEventListener("click", function () {
+        botaoGerar.addEventListener("click", function() {
             // Variavéis dos inputs
             var nome = document.getElementById("nome")
             var cargo = document.getElementById("cargo")
@@ -41,10 +41,10 @@
             var salarioLiquido = 0; //Salário - Descontos
 
             // Desconto do VT
-            descVT = parseFloat(salario.valeu) * 0.06;
+            descVT = parseFloat(salario.value) * 0.06;
 
             //Desconto do VR
-            if (parseFloat(salario.valeu) > 2500) {
+            if (parseFloat(salario.value) > 2500) {
                 descVR = 200
             } else {
                 descVR = 120;
@@ -62,17 +62,17 @@
             Quarta faixa: (R$ 7.786,02 - R$ 4.000,04) = R$ 3.785,98 X 14%  R$ 908,86
             */
 
-            if(parseFloat(salario.valeu) <= 1412){
+            if(parseFloat(salario.value) <= 1412){
                 descINSS = 105.90
-            } else if (parseFloat(salario.valeu) > 1412 && parseFloat(salario.valeu) <= 2666.68) {
+            } else if (parseFloat(salario.value) > 1412 && parseFloat(salario.value) <= 2666.68) {
                 descINSS = 105.90 + 112.92
-            } else if (parseFloat(salario.valeu) > 2666.68 && parseFloat(salario.valeu) <= 4000.83) {
+            } else if (parseFloat(salario.value) > 2666.68 && parseFloat(salario.value) <= 4000.83) {
                 descINSS = 105.90 + 112.92+ 160
             } else {
                 descINSS = 105.90 + 112.92 +160 + 530.04 
             }
 
-            salarioLiquido = parseFloat(salario.valeu) - (descVT + descVR + descINSS)
+            salarioLiquido = parseFloat(salario.value) - (descVT + descVR + descINSS)
 
             relatorio.innerHTML = "<p>Nome completo: " + nome.value + "</p>" 
                                 + "<p>Cargo: " + cargo.value + "</p>" 
