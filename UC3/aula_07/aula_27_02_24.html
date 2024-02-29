@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 var!=let</title>
+</head>
+<body>
+    <p classe="texto">P 1</p>
+    <p classe="texto">P 2</p>
+    <p classe="texto">P 3</p>
+    <p id="texto"></p>
+
+<script>
+    console.log(document.getElementById("texto"))
+    console.log(document.getElementsByClassName("texto"))
+
+    //var != let       !=usado para difereça
+
+    let nome ="Leandro"; //global
+    var idade ="0"; //Global
+
+    let frutas = ["Maça", "Uva", "Banana"]
+
+    for (let index = 0; index<frutas.length; index++) {
+        console.log(frutas[index])
+    }
+
+    function guardarNome(nomeParametro){
+        let nome = nomeParametro;//Local
+    
+        console.log(nome)
+    }
+
+    guardarNome("Fulano")
+
+    console.log(nome)
+ </script>
+
+
+
+
+
+
+
+    
+</body>
+</html>

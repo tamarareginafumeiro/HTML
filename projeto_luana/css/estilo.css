@@ -440,7 +440,7 @@ nav a{
 }
 
 #conteudo {
-    margin-top: 85px;
+    margin-top: 90px;
 }
 
 .rodape-conteudo{
@@ -491,5 +491,69 @@ nav a{
     margin: 0 15%;
 }
 
-
 }
+
+
+@media screen and (min-width: 850px) {
+    .card-conteudo figure img{
+        height: 130px;
+        width: 210px;
+    }
+    
+    .titulo{
+        margin-top: 100px;
+    }
+
+    #tituloHome{
+        margin-top: 0;
+    }
+
+    .text-destaque h2{
+        margin-top: -4px;
+    }
+
+    .produtos {
+        height: 250px;
+    }
+
+    .acesse{
+        margin: 20px auto;
+    }
+
+    #conteudo-contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #conteudo article{
+        margin: 15px 5px;
+    }
+    .localizacao iframe{
+        height: 500px;
+   }
+
+   #localizacao-end{
+        height: 745px;
+   }
+}
+
+@media screen and (min-width:1000px){
+
+    .conteudo{
+        max-width: 1000px;
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

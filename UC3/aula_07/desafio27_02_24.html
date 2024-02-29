@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 Desafio</title>
+
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        table,
+        table tr,
+        table tr td,
+        table tr th {
+            border: 2px solid #4e4d4d;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Supermercado</h4>
+
+    <label for="data">Data</label>
+    <input type="text" id="data" name="data">
+
+    <label for="compra">Compra</label>
+    <input type="text" id="compra" name="compra">
+
+    <button id="incluir" onclick="mostrarLista()">Incluir na lista</button>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Compra</th>
+            </tr>
+
+        </thead>
+        <tbody id="lista"></tbody>
+    </table>
+
+    <p id="mostrar-data"></p>
+    <p id="mostrar-compra"></p>
+
+    <script>
+        var data = document.getElementById("data");
+        var comprar = document.getElementById("compra");
+        var incluir = document.getElementById("incluir")
+        var lista = document.getElementById("lista")
+
+        /* var datas = [];*/
+
+
+
+        function mostrarLista() {
+            var aux = "";
+            var compras = [];
+
+            compras.push(data.value)
+            compras.push(comprar.value)
+
+
+            data.value = ""
+            comprar.value = ""
+
+            for (var cont = 0; cont < compras.length; cont++) {
+
+                aux += `<td> ${compras[cont]}</td>`
+
+
+
+
+            }
+            lista.innerHTML += `<tr>${aux}</tr>`;
+            /*comprar.style.backgroundColor ="blue"*/
+        }    
+    </script>
+
+
+</body>
+
+</html>
