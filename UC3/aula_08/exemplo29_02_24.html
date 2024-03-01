@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fron id="formulario-cadastro">
+        <label>Produto</label>
+        <input type="text" name="produto">
+
+        <label>Preço</label>
+        <input type="text" name="preco">
+
+        <label>Quantidade</label>
+        <input type="text" name="quantidade">
+
+        <button>Cadastrar</button>
+    </fron>
+
+    <!--Previnir o evento de submit-->
+    <script>
+        let formulario = document.getElementById("formulario-cadastro");
+
+        formulario.addEventListener("submit", function(){
+            //Previnir um evento padrão
+            event.preventDefault();
+
+            validar(formulario.produtos)
+            validar(formulario.preco)
+            validar(formulario.quantidade)
+
+            console.log(formulario.produtos.value)
+            console.log(formulario.preco.value)
+            console.log(formulario.quantidade.value)
+        })
+
+        function validar (campo) {
+            if(campo.value =="") {
+                campo.style = "border: 1px red solid;"
+            } else {
+                campo.style = "border: 1px green solid;"
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

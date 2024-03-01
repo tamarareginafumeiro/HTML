@@ -542,8 +542,27 @@ nav a{
 
     .conteudo{
         max-width: 1000px;
-        width: 100%;
+        margin: 0 auto;
     }
+
+    .cont-home{
+        padding-top: 90px;
+    }
+
+    nav{
+        justify-content: flex-end;
+        width: 80%;
+    }
+
+    /*position:relative
+    left: 245px
+    justify-content: space-evenly;*/
+    
+
+    #tituloLoc{
+        margin-top: 70%;
+    }
+
     
 }
 
