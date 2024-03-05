@@ -545,6 +545,12 @@ nav a{
         margin: 0 auto;
     }
 
+    .card-conteudo {
+        justify-content: center;
+        align-items: center
+    }
+    
+
     .cont-home{
         padding-top: 90px;
     }
