@@ -1,0 +1,79 @@
+body{
+    background-color: #fff;
+}
+
+.menu {
+    
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;*/
+    overflow: hidden;
+   background-color:#010326;
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+
+
+#logo{
+    position:relative;
+    left: 15px;
+    justify-content: space-evenly;
+}
+
+ul {
+    display: flex;
+    margin: auto;
+    list-style: none;
+    padding: 15px;
+    align-items: center;
+    font-size: 15px;
+}
+
+#logo {
+    width: 350px;
+    height: 100px;
+}
+
+.botao {
+    background-color: #4A6D1D;
+    margin: 2px;
+    width: 200px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+
+}
+
+.botao:hover {
+    background-color: #0FEC0B;
+}
+
+/*li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin: 0 200px;
+}
+
+#carrosel{
+    width: 1200px;
+    height: 500px;
+    
+}*/
+
+
+
+/* 
+#grad2 {
+    height: 150px;
+    width: 200px;
+    background-color: red; // For browsers that do not support gradients //
+    background-image: radial-gradient(circle, red, yellow, green);
+    z-index: 0;
+} */
