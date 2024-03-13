@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05/03/2024</title>
+
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+
+        }
+
+        table,
+        table tr,
+        table tr td,
+        table tr th {
+            border: 1px solid #000;
+            padding: 5px;
+            margin: 50px auto;
+            border-radius: 3px;
+        }
+
+        .enviar {
+            background-color: aqua;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Lista de contato:</h4>
+
+    <label for="Nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone">
+
+    <label for="assunto">Assunto</label>
+    <input type="text" id="assunto" name="assunto">
+
+    <label for="mensagem">Mensagem</label>
+    <input type="text" id="mensagem" name="mensagem">
+
+    <button id="enviar" onclick="mostrarLista()">Enviar</button>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome completo</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Assunto</th>
+                <th>Mensagem</th>
+            </tr>
+
+        </thead>
+        <tbody id="lista"></tbody>
+    </table>
+
+    <p id="mostrar-nome"></p>
+    <p id="mostrar-email"></p>
+    <p id="mostrar-telefone"></p>
+    <p id="mostrar-assunto"></p>
+    <p id="mostrar-mensagem"></p>
+
+    <script>
+        var nome = document.getElementById("nome");
+        var email = document.getElementById("email");
+        var telefone = document.getElementById("telefone");
+        var assunto = document.getElementById("assunto");
+        var mensagem = document.getElementById("mensagem");
+        var enviar = document.getElementById("enviar");
+        var lista = document.getElementById("lista");
+
+
+
+        function mostrarLista() {
+            var aux = "";
+            var nomes = [];
+            var emails = [];
+            var telefones = [];
+            var assuntos = [];
+            var mensagens = [];
+
+            nomes.push(nome.value)
+            emails.push(email.value)
+            telefones.push(telefone.value)
+            assuntos.push(assunto.value)
+            mensagens.push(mensagem.value)
+
+
+            nome.value = ""
+            email.value = ""
+            telefone.value = ""
+            assunto.value = ""
+            mensagem.value = ""
+
+            for (var cont = 0; cont < nomes.length; cont++) {
+
+                aux += "<p>Nome completo: " + nomes[cont] + "</p>"
+                    + "<p>Email: " + emails[cont] + "</p>"
+                    + "<p>telefone: " + telefones[cont]+ "</p>"
+                    + "<p>assunto: " + assuntos[cont] + "</p>"
+                    + "<p>mensagem: " + mensagens[cont] + "</p>"
+
+
+
+
+            }
+            lista.innerHTML += `<tr>${aux}</tr>`;
+
+        }    
+    </script>
+
+</body>
+
+</html>
