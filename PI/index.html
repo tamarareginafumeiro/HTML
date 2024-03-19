@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KLV</title>
+  <link rel="stylesheet" href="css/estiloMobile.css">
+</head>
+
+<body>
+  <!-- CIRCULO GRADIENTE -->
+
+  <div class="gradiente"></div>
+
+  <!-- MENU MOBILE 320 -->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Quem somos</a>
+    <a href="#">Serviços</a>
+    <a href="#">Equipamentos</a>
+    <a href="#">Benefícios</a>
+    <a href="#">Contato</a>
+  </div>
+
+  <div id="main">
+    <img src="logo klv.gif" alt=""> 
+    <span onclick="openNav()">&#9776;</span>     
+  </div>
+
+  <!-- CARROSSEL MOBILE 320 -->
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img id="carrossel" src="imagens/carrosel.webp" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img id="carrossel" src="imagens/03.03 - Assistencia Tecnica KLV.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">  
+      <img id="carrossel" src="imagens/klv-reverse-loja-de-informatica-3.jpeg" style="width:100%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <!-- Icones REDES SOCIAIS -->
+
+    <div id="redes" class="redesSociais">
+      <a href="#" id="whatsapp">
+        <img src="imagens/MicrosoftTeams-image.png" alt="">
+      </a>
+      <a href="#" id="instagram">
+        <img src="imagens/MicrosoftTeams-image (1).png" alt="">
+      </a>
+      <a href="#" id="email">
+        <img src="imagens/Email.png" alt="">
+      </a>
+    </div>
+
+    <!-- IFrame Quem Somos -->
+
+    <div class="somos">
+      <h4>QUEM SOMOS</h4>
+      <hr>
+      <p>O grupo KLV está a mais de 12 anos no mercado em soluções de tecnologia e com o ritmo acelerado da mudança tecnológica requer atualizações nos equipamentos e com isso montamos a KLV reverse que é especializada em locação, reparos, upgrade, vendar e descarte consciente, nós trabalhamos com atendimento personalizado para você ou sua empresa.
+      
+        Desde consultoria estratégica até implementação de sistemas avançados, oferecemos um portfólio abrangente de serviços. 
+        
+        Deixe-nos mostrar como podemos otimizar processos, impulsionar a eficiência operacional e catalisar o crescimento sustentável do seu negócio.
+
+        Na KLV, estamos prontos para ser mais do que seu provedor de equipamentos; queremos ser seu parceiro de confiança em cada etapa do caminho
+      
+        Contribuímos para um mundo mais limpo e sustentável, protegendo o planeta enquanto avançamos tecnologicamente, aqui você pode descartar seu "lixo eletrônico" e ainda ter um retorno em créditos para ser utilizado em qualquer loja do nosso grupo.
+      </p>
+    </div>
+
+
+    <!-- Acordeon SERVIÇOS -->
+    
+    
+      <h3 id="titulo">SERVIÇOS</h3>
+
+      <div class="acordeon">
+        <button class="accordion">LOCAÇÃO</button>
+        <div class="panel">
+          <p>Com a locação de computadores permite que você tenha acesso a equipamentos de última geração, sem precisar se preocupar com a depreciação. Além disso, o suporte técnico oferecido por uma empresa de locação pode ajudar a resolver problemas rapidamente, evitando interrupções no trabalho. </p>
+        </div>
+
+        <button class="accordion">REPAROS</button>
+        <div class="panel">
+          <p>Realizamos reparos como limpeza, atualizações e otimizações para manter o computador funcionando corretamente. </p>
+        </div>
+
+        <button class="accordion">UPGRADE</button>
+        <div class="panel">
+          <p>Melhoramos a velocidade e desempenho de seus equipamentos, podendo usar as peças trocadas para pagar parte do custo. </p>
+        </div>
+
+        <button class="accordion">VENDAS</button>
+        <div class="panel">
+          <p>Compramos seus equipamentos que não estão mais em uso. </p>
+        </div>
+
+        <button class="accordion">DESCARTE</button>
+        <div class="panel">
+          <p>Traga os equipamentos que não estão mais sendo usado e realizamos o descarte correntemente sem prejudicar a natureza.</p>
+        </div>
+      </div>
+
+    <!-- CARROSSEL -->
+
+
+
+    <!-- MODAL -->
+
+    <!-- Para abrir o modal (BOTAO ESTARA NO CARROSSEL DE PRODUTOS -->
+    <button id="myBtn">Modal Carrossel</button>
+
+    <!-- The Modal -->
+    <nav id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        
+        <img src="imagens/notebook.webp" alt="" id="imagensModal">
+        
+        <div class="modalTexto">
+          <h4>NOTEBOOKS</h4>
+          <p>Notebook é um computador portátil que pode ser usado para tarefas pessoais ou de trabalho. 
+            Consiste, normalmente, em um painel fino e plano com teclado e outros componentes como processador, memória RAM e unidade de disco rígido. 
+            Além disso, vem com tecnologias sem fio, como Wi-Fi e Bluetooth.
+          </p>
+        </div>
+                
+      </div>
+
+    </nav>
+
+
+
+    <!-- BENEFICIOS -->
+
+    <div class= "cardsBene">
+      <div class="beneficios">
+        <h4>BENEFICIOS</h4>
+        <hr>
+        <p>Com a locação terá economia de recurso, evitando despesas iniciais significativas. Poderá adquirir novos computadores ou troca conforme a demanda, evitando gastos desnecessários.  
+
+          Irá mantenha-se atualizado com as últimas tecnologias sem a preocupação de revender hardware antigo.  
+          
+          Oferecemos suporte técnico para minimizar tempo de inatividade e resolver problemas rapidamente, cuidamos da manutenção e reparos. 
+          
+          Com os pagamentos mensais proporcionam previsibilidade financeira, custos de locação podem ser dedutíveis de impostos, gerando economias fiscais.  
+          
+          Promovemos práticas sustentáveis ao reduzir o desperdício eletrônico e promover o reuso de dispositivos.  
+          
+          Quando terminar o contrato você pode optar por comprar o equipamento, e reduziremos uma porcentagem da sua locação no valor do produto.
+        </p>
+      </div>
+
+      <div class="beneficios">
+        <h4>LIXO ELETRÔNICO</h4>
+        <hr>
+        <p>Quando o lixo eletrônico é descartado inadequadamente, ocorre a liberação de substâncias químicas nocivas no solo e na água. 
+          
+          Esses produtos químicos contaminam o solo, atingem os lençóis freáticos e podem chegar aos cursos d'água, comprometendo a qualidade e a disponibilidade de água potável. 
+
+          Além disso, a legislação também prevê penalidades para quem descarta eletrônicos de forma irregular, incluindo multas que variam de acordo com a gravidade da infração. 
+          
+          Portanto, é essencial estar ciente das obrigações legais e buscar alternativas sustentáveis para o descarte de eletrônicos. 
+        </p>
+      </div>
+    </div>
+    
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="menu-rodape">
+          <div class="loja">
+              <ul>
+                  <li><b>KLV Reverse</b></li>
+                  <li><b>Contato:</b> (11)94370-6303</li>
+                  <li><b>Endereço:</b> Avenida Rio Branco, 316 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
+                      estacionamento Wipark (Av. Rio Branco, 312)</li>
+              </ul>
+          </div>
+
+          <div class="loja">
+              <ul>
+                  <li><b>KLV Notebooks</b></li>
+                  <li><b>Contato:</b> (11)9351-1214</li>
+                  <li><b>Endereço: </b> Avenida Rio Branco, 324 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
+                      estacionamento Wipark (Av. Rio Branco, 312)</li>
+              </ul>
+          </div>
+
+      </div>
+      <div class="direitos">
+          <p><b><i>© 2024 KLV.com. Todos os direitos reservados</i></b></p>
+      </div>
+
+    </footer>
+
+
+    
+
+
+<script>
+  // MENU MOBILE
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "#010326";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+    document.body.style.backgroundColor = "#010326";
+
+  }
+
+  // CARROSSEL MOBILE
+
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000);
+  }
+
+  // ACORDEON Mobile
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+  // MODAL
+
+  // mODAL
+  var modal = document.getElementById("myModal");
+
+  // Botao abrir o modal
+  var btn = document.getElementById("myBtn");
+
+  // <span> para fechar o modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+</script>
+   
+</body>
+</html> 
