@@ -54,40 +54,53 @@ let vitrine = $("#vitrine");
      while(x < produtos.length){x++}
 */
 
-//Variavel auxiliar para montagem da vitrine
+// Variavel auxiliar para montagem da vitrine
 let aux_vitrine ="";
 
-//Leitura de array de objetos
-produtos.forEach(item_produto => {
-    console.log(item_produto.name);
-    console.log(item_produto.color);
-    console.log(item_produto.price);
+// Leitura de array de objetos
+//produtos.forEach(item_produto => {
 
-    //Varialvel acumuladora
+for(let y = 0; y < produtos.length; y++){
+    console.log(produtos[y].name);
+    console.log(produtos[y].color);
+    console.log(produtos[y].price);
+
+    // Variavel de parcela
+    const parcela =  produtos[y].price / 3;
+
+    // Varialvel acumuladora
     aux_vitrine += `<div class="col-md-3"> 
                         <div class="card">
-                            <h5 class="card-header"> ${item_produto.name}</h5>
+                            <h5 class="card-header"> ${produtos[y].name}</h5>
                             <div class="card-body">
                                 <div class="img-grande">
-                                    <img src="${item_produto.img1}" id="image-grande">
+                                    <img src="${produtos[y].img1}" id="image-grande-${y}">
                                 </div>
-                                <p>Cor:${item_produto.color}</p>
-                                <p>${item_produto.price}</p>
-                                <p>3x s/juros</p>
+                                <p>Cor:${produtos[y].color}</p>
+                                <p>${produtos[y].price.toLocaleString("pt-BR",{style: "currency", "currency": "BRL"})}</p>
+                                <p>3x de ${parcela.toLocaleString("pt-BR",{style: "currency", "currency": "BRL"})} s/juros</p>
                                 <div class="row">
                                     <div class="col">
-                                        <img src="${item_produto.img1}" onclick="mudarImg(${item_produto.img1})">
+                                        <img src="${produtos[y].img1}" onclick="mudarImg(${y}, '${produtos[y].img1}')">
                                     </div>
                                     <div class="col">
-                                        <img src="${item_produto.img2}" onclick="mudarImg(${item_produto.img2})">
+                                        <img src="${produtos[y].img2}" onclick="mudarImg(${y}, '${produtos[y].img2}')">
                                     </div>
                                     <div class="col">
-                                        <img src="${item_produto.img3}" onclick="mudarImg(${item_produto.img3})">
+                                        <img src="${produtos[y].img3}" onclick="mudarImg(${y}, '${produtos[y].img3}')">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>`
-}) 
+}
 
 vitrine.html(aux_vitrine);
+
+
+// Criar a função para modificar as imagens pequenas em maiores  (posicao=y)
+function mudarImg(posicao, imagem){
+    let imagem_grande = $("#image-grande-" + posicao);
+    imagem_grande.prop("src", imagem )
+
+}
